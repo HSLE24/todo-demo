@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use("/api", indexRouter);
 
-const mongoURI = "mongodb://localhost:27017/todo-demo";
+const mongoURI = "mongodb://127.0.0.1:27017/todo-demo";
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true })
